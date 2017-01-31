@@ -52,7 +52,7 @@
 	</snapshotRepository>
 </distributionManagement>
     <build>
-    	<finalName>Continuous-Integration</finalName>
+    	<finalName>HelloMiracle</finalName>
         <pluginManagement>
             <plugins>
                 <plugin>
