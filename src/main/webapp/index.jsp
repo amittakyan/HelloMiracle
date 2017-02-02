@@ -7,6 +7,6 @@
 <title>Hello-Miracle-02</title>
 </head>
 <body>
-<h1>Hello Miracle-02 </h1>
+<h1>Hello Miracle-02</h1>
 </body>
 </html>
