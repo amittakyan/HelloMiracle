@@ -3,9 +3,22 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>HelloMiracle</groupId>
     <artifactId>HelloMiracle</artifactId> 
-    <version>0.3.5-SNAPSHOT</version>
+    <version>1.3.5-SNAPSHOT</version>
     <packaging>war</packaging>
     <name>HelloMiracle</name>
+	<scm>
+	    <connection>scm:git:git@github.com:AshishSanju/practice.git</connection>
+	    <developerConnection>							scm:git:git@github.com:AshishSanju/practice.git</developerConnection>
+	    <url>scm:git:git@github.com:AshishSanju/practice.git</url>
+    <tag>HEAD</tag>
+    </scm>
+	<distributionManagement>
+    <repository>
+        <id>central</id>
+        <name>Miracle-PC-releases</name>
+        <url>http://localhost:8081/artifactory</url>
+    </repository>
+	</distributionManagement>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -35,22 +48,10 @@
     </dependencies>
     <developers>
         <developer>
-            <name>AMIT SAINI</name>
-            <email>amit.takyan@gmail.com</email> 
+            <name>Ashish</name>
+            <email>ashishsanju14@gmail.com</email> 
         </developer>
     </developers>
-    <distributionManagement>
-	<repository>
-	  <id>nexus</id>
-	  <name>Nexus Releases</name>
-	  <url>http://11ab4439.ngrok.io/nexus/content/repositories/releases</url>
-	</repository>
-	<snapshotRepository>
-	  <id>nexus</id>
-	  <name>Nexus Snapshot</name>
-	  <url>http://11ab4439.ngrok.io/nexus/content/repositories/snapshots</url>
-	</snapshotRepository>
-</distributionManagement>
     <build>
     	<finalName>HelloMiracle</finalName>
         <pluginManagement>
@@ -71,17 +72,17 @@
                     </configuration>
                 </plugin>
                 <plugin>
-                    <artifactId>maven-release-plugin</artifactId>
-                    <version>2.5.1</version>
-                    <configuration>
-                        <tagNameFormat>v@{project.version}</tagNameFormat>
-                        <autoVersionSubmodules>true</autoVersionSubmodules>
-                        <!-- do not release profile from Maven super pom -->
-                        <useReleaseProfile>false</useReleaseProfile>
-                        <!--  instead use our own one called release, see below -->
-                        <releaseProfiles>release</releaseProfiles>
-                    </configuration>
-                </plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-release-plugin</artifactId>
+				<version>2.5.3</version>
+				<configuration>
+                    <goals>install</goals>	
+					<autoversionsubmodules>true</autoversionsubmodules>
+					<checkModificationExcludes>
+						<checkModificationExclude>pom.xml</checkModificationExclude>
+					</checkModificationExcludes>
+				</configuration>
+			</plugin>
                 <plugin>
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>2.10.1</version>
