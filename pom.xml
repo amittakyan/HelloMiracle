@@ -8,7 +8,7 @@
     <name>HelloMiracle</name>
 	<scm>
 	    <connection>scm:git:git@github.com:AshishSanju/practice.git</connection>
-	    <developerConnection>							scm:git:git@github.com:AshishSanju/practice.git</developerConnection>
+	    <developerConnection>scm:git:git@github.com:AshishSanju/practice.git</developerConnection>
 	    <url>scm:git:git@github.com:AshishSanju/practice.git</url>
     <tag>HEAD</tag>
     </scm>
