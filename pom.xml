@@ -7,9 +7,9 @@
     <packaging>war</packaging>
     <name>HelloMiracle</name>
 	<scm>
-	    <connection>scm:git:git@github.com:AshishSanju/practice.git</connection>
-	    <developerConnection>scm:git:git@github.com:AshishSanju/practice.git</developerConnection>
-	    <url>scm:git:git@github.com:AshishSanju/practice.git</url>
+	    <connection>scm:git:git@github.com:AshishSanju/HelloMiracle.git</connection>
+	    <developerConnection>scm:git:git@github.com:AshishSanju/HelloMiracle.git</developerConnection>
+	    <url>scm:git:git@github.com:AshishSanju/HelloMiracle.git</url>
     <tag>HEAD</tag>
     </scm>
 	<distributionManagement>
