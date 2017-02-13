@@ -26,7 +26,7 @@ RUN rm -rf apache-tomcat-8.5.11.tar.gz
 RUN mkdir maindownload
 RUN apt-get -y install unzip
 
-RUN wget -P maindownload --content-disposition "http://11ab4439.ngrok.io/nexus/service/local/artifact/maven/redirect?r=snapshots&g=HelloMiracle&a=HelloMiracle&v=LATEST&e=war"
+RUN wget -P maindownload --content-disposition "http://d04d1044.ngrok.io/nexus/service/local/artifact/maven/redirect?r=snapshots&g=HelloMiracle&a=HelloMiracle&v=LATEST&e=war"
 
 RUN rm -rf /usr/local/apache-tomcat-8.5.11/webapps/ROOT/*
 RUN unzip -qq maindownload/*.war -d /usr/local/apache-tomcat-8.5.11/webapps/ROOT/
