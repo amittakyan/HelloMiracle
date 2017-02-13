@@ -16,7 +16,7 @@
     <repository>
         <id>central</id>
         <name>Miracle-PC-releases</name>
-        <url>http://localhost:8081/artifactory</url>
+        <url>http://localhost:8082/artifactory</url>
     </repository>
 	</distributionManagement>
     <properties>
