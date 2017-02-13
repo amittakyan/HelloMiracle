@@ -43,12 +43,12 @@
 	<repository>
 	  <id>nexus</id>
 	  <name>Nexus Releases</name>
-	  <url>http://d04d1044.ngrok.io/nexus/content/repositories/releases</url>
+	  <url>http://3f51b64c.ngrok.io/nexus/content/repositories/releases</url>
 	</repository>
 	<snapshotRepository>
 	  <id>nexus</id>
 	  <name>Nexus Snapshot</name>
-	  <url>http://d04d1044.ngrok.io/nexus/content/repositories/snapshots</url>
+	  <url>http://3f51b64c.ngrok.io/nexus/content/repositories/snapshots</url>
 	</snapshotRepository>
 </distributionManagement>
     <build>
