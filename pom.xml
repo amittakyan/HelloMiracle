@@ -3,14 +3,14 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>HelloMiracle</groupId>
     <artifactId>HelloMiracle</artifactId> 
-    <version>1.3.25-SNAPSHOT</version>
+    <version>1.3.25</version>
     <packaging>war</packaging>
     <name>HelloMiracle</name>
 	<scm>
 	    <connection>scm:git:git@github.com:AshishSanju/HelloMiracle.git</connection>
 	    <developerConnection>scm:git:git@github.com:AshishSanju/HelloMiracle.git</developerConnection>
 	    <url>scm:git:git@github.com:AshishSanju/HelloMiracle.git</url>
-    <tag>HEAD</tag>
+    <tag>HelloMiracle-1.3.25</tag>
     </scm>
 	<distributionManagement>
     <repository>
